@@ -52,10 +52,21 @@ extension FlightListViewController {
         }
     }
     
+    private func removeSortView() {
+        self.sortVC.view.removeFromSuperview()
+
+    }
 }
 
 
 extension FlightListViewController: SortViewControllerDelegate {
-    func didClickOncancle() {}
-    func didClickOnok() {}
+    func didClickOncancel() {
+        removeSortView()
+    }
+    func didClickOnok(sortType:FlightSort?) {
+        if let type = sortType {
+            self.flighViewModel.sortList(type: type)
+        }
+        removeSortView()
+    }
 }

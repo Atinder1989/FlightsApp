@@ -39,6 +39,9 @@ struct FlightData: Codable {
     var flightToTime: String
     var flightDuration: String
     var flightDate: String
+    var priceInInt: Int
+    var takeOffInDouble: Double
+    var landingTimeDouble: Double
 
     
     init(from decoder:Decoder) throws {
@@ -46,8 +49,14 @@ struct FlightData: Codable {
         self.originCode = try container.decodeIfPresent(String.self, forKey: .originCode) ?? ""
         self.destinationCode = try container.decodeIfPresent(String.self, forKey: .destinationCode) ?? ""
         self.takeoffTime = try container.decodeIfPresent(String.self, forKey: .takeoffTime) ?? ""
+        self.takeOffInDouble = Double(self.takeoffTime) ?? 0
+
         self.landingTime = try container.decodeIfPresent(String.self, forKey: .landingTime) ?? ""
+        self.landingTimeDouble = Double(self.landingTime) ?? 0
+
         self.price = try container.decodeIfPresent(String.self, forKey: .price) ?? ""
+        self.priceInInt = Int(self.price) ?? 0
+        
         self.airlineCode = try container.decodeIfPresent(String.self, forKey: .airlineCode) ?? ""
         self.airLineClass = try container.decodeIfPresent(String.self, forKey: .airLineClass) ?? ""
         

@@ -42,7 +42,35 @@ extension FlightListViewModel{
             
         }
     }
+    
+    func sortList(type:FlightSort) {
+        switch type {
+        case .price:
+            self.sortListByPrice()
+            break
+        case .landingTime:
+            self.sortListByLandingTime()
+            break
+        case .takeOff:
+            self.sortListByTakeOff()
+            break
+        }
+    }
 }
+
+// MARK:- Private Methods
+extension FlightListViewModel{
+    private func sortListByPrice() {
+     self.flightDataList = self.flightDataList.sorted(by: {$0.priceInInt < $1.priceInInt} )
+    }
+    private func sortListByTakeOff() {
+        self.flightDataList = self.flightDataList.sorted(by: {$0.takeOffInDouble < $1.takeOffInDouble} )
+    }
+    private func sortListByLandingTime() {
+        self.flightDataList = self.flightDataList.sorted(by: {$0.landingTimeDouble > $1.landingTimeDouble} )
+    }
+}
+
 
 extension FlightListViewModel: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
