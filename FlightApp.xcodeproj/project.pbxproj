@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B81A0CDE22C72E5700E21B52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81A0CDD22C72E5700E21B52 /* AppDelegate.swift */; };
+		B81A0CE022C72E5700E21B52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81A0CDF22C72E5700E21B52 /* ViewController.swift */; };
+		B81A0CE322C72E5700E21B52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B81A0CE122C72E5700E21B52 /* Main.storyboard */; };
+		B81A0CE622C72E5700E21B52 /* FlightApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B81A0CE422C72E5700E21B52 /* FlightApp.xcdatamodeld */; };
+		B81A0CE822C72E5900E21B52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B81A0CE722C72E5900E21B52 /* Assets.xcassets */; };
+		B81A0CEB22C72E5900E21B52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B81A0CE922C72E5900E21B52 /* LaunchScreen.storyboard */; };
+		B81A0CF622C72E5900E21B52 /* FlightAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81A0CF522C72E5900E21B52 /* FlightAppTests.swift */; };
+		B81A0D0122C72E5900E21B52 /* FlightAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81A0D0022C72E5900E21B52 /* FlightAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B81A0CF222C72E5900E21B52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B81A0CD222C72E5700E21B52 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B81A0CD922C72E5700E21B52;
+			remoteInfo = FlightApp;
+		};
+		B81A0CFD22C72E5900E21B52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B81A0CD222C72E5700E21B52 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B81A0CD922C72E5700E21B52;
+			remoteInfo = FlightApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B81A0CDA22C72E5700E21B52 /* FlightApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlightApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B81A0CDD22C72E5700E21B52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B81A0CDF22C72E5700E21B52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B81A0CE222C72E5700E21B52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B81A0CE522C72E5700E21B52 /* FlightApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FlightApp.xcdatamodel; sourceTree = "<group>"; };
+		B81A0CE722C72E5900E21B52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B81A0CEA22C72E5900E21B52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B81A0CEC22C72E5900E21B52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B81A0CF122C72E5900E21B52 /* FlightAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlightAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B81A0CF522C72E5900E21B52 /* FlightAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightAppTests.swift; sourceTree = "<group>"; };
+		B81A0CF722C72E5900E21B52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B81A0CFC22C72E5900E21B52 /* FlightAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlightAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B81A0D0022C72E5900E21B52 /* FlightAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightAppUITests.swift; sourceTree = "<group>"; };
+		B81A0D0222C72E5900E21B52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B81A0CD722C72E5700E21B52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B81A0CEE22C72E5900E21B52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B81A0CF922C72E5900E21B52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B81A0CD122C72E5700E21B52 = {
+			isa = PBXGroup;
+			children = (
+				B81A0CDC22C72E5700E21B52 /* FlightApp */,
+				B81A0CF422C72E5900E21B52 /* FlightAppTests */,
+				B81A0CFF22C72E5900E21B52 /* FlightAppUITests */,
+				B81A0CDB22C72E5700E21B52 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B81A0CDB22C72E5700E21B52 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B81A0CDA22C72E5700E21B52 /* FlightApp.app */,
+				B81A0CF122C72E5900E21B52 /* FlightAppTests.xctest */,
+				B81A0CFC22C72E5900E21B52 /* FlightAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B81A0CDC22C72E5700E21B52 /* FlightApp */ = {
+			isa = PBXGroup;
+			children = (
+				B81A0CDD22C72E5700E21B52 /* AppDelegate.swift */,
+				B81A0CDF22C72E5700E21B52 /* ViewController.swift */,
+				B81A0CE122C72E5700E21B52 /* Main.storyboard */,
+				B81A0CE722C72E5900E21B52 /* Assets.xcassets */,
+				B81A0CE922C72E5900E21B52 /* LaunchScreen.storyboard */,
+				B81A0CEC22C72E5900E21B52 /* Info.plist */,
+				B81A0CE422C72E5700E21B52 /* FlightApp.xcdatamodeld */,
+			);
+			path = FlightApp;
+			sourceTree = "<group>";
+		};
+		B81A0CF422C72E5900E21B52 /* FlightAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				B81A0CF522C72E5900E21B52 /* FlightAppTests.swift */,
+				B81A0CF722C72E5900E21B52 /* Info.plist */,
+			);
+			path = FlightAppTests;
+			sourceTree = "<group>";
+		};
+		B81A0CFF22C72E5900E21B52 /* FlightAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B81A0D0022C72E5900E21B52 /* FlightAppUITests.swift */,
+				B81A0D0222C72E5900E21B52 /* Info.plist */,
+			);
+			path = FlightAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B81A0CD922C72E5700E21B52 /* FlightApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B81A0D0522C72E5900E21B52 /* Build configuration list for PBXNativeTarget "FlightApp" */;
+			buildPhases = (
+				B81A0CD622C72E5700E21B52 /* Sources */,
+				B81A0CD722C72E5700E21B52 /* Frameworks */,
+				B81A0CD822C72E5700E21B52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlightApp;
+			productName = FlightApp;
+			productReference = B81A0CDA22C72E5700E21B52 /* FlightApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B81A0CF022C72E5900E21B52 /* FlightAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B81A0D0822C72E5900E21B52 /* Build configuration list for PBXNativeTarget "FlightAppTests" */;
+			buildPhases = (
+				B81A0CED22C72E5900E21B52 /* Sources */,
+				B81A0CEE22C72E5900E21B52 /* Frameworks */,
+				B81A0CEF22C72E5900E21B52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B81A0CF322C72E5900E21B52 /* PBXTargetDependency */,
+			);
+			name = FlightAppTests;
+			productName = FlightAppTests;
+			productReference = B81A0CF122C72E5900E21B52 /* FlightAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B81A0CFB22C72E5900E21B52 /* FlightAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B81A0D0B22C72E5900E21B52 /* Build configuration list for PBXNativeTarget "FlightAppUITests" */;
+			buildPhases = (
+				B81A0CF822C72E5900E21B52 /* Sources */,
+				B81A0CF922C72E5900E21B52 /* Frameworks */,
+				B81A0CFA22C72E5900E21B52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B81A0CFE22C72E5900E21B52 /* PBXTargetDependency */,
+			);
+			name = FlightAppUITests;
+			productName = FlightAppUITests;
+			productReference = B81A0CFC22C72E5900E21B52 /* FlightAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B81A0CD222C72E5700E21B52 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Reliance Jio Infocomm";
+				TargetAttributes = {
+					B81A0CD922C72E5700E21B52 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					B81A0CF022C72E5900E21B52 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = B81A0CD922C72E5700E21B52;
+					};
+					B81A0CFB22C72E5900E21B52 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = B81A0CD922C72E5700E21B52;
+					};
+				};
+			};
+			buildConfigurationList = B81A0CD522C72E5700E21B52 /* Build configuration list for PBXProject "FlightApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B81A0CD122C72E5700E21B52;
+			productRefGroup = B81A0CDB22C72E5700E21B52 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B81A0CD922C72E5700E21B52 /* FlightApp */,
+				B81A0CF022C72E5900E21B52 /* FlightAppTests */,
+				B81A0CFB22C72E5900E21B52 /* FlightAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B81A0CD822C72E5700E21B52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B81A0CEB22C72E5900E21B52 /* LaunchScreen.storyboard in Resources */,
+				B81A0CE822C72E5900E21B52 /* Assets.xcassets in Resources */,
+				B81A0CE322C72E5700E21B52 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B81A0CEF22C72E5900E21B52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B81A0CFA22C72E5900E21B52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B81A0CD622C72E5700E21B52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B81A0CE622C72E5700E21B52 /* FlightApp.xcdatamodeld in Sources */,
+				B81A0CE022C72E5700E21B52 /* ViewController.swift in Sources */,
+				B81A0CDE22C72E5700E21B52 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B81A0CED22C72E5900E21B52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B81A0CF622C72E5900E21B52 /* FlightAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B81A0CF822C72E5900E21B52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B81A0D0122C72E5900E21B52 /* FlightAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B81A0CF322C72E5900E21B52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B81A0CD922C72E5700E21B52 /* FlightApp */;
+			targetProxy = B81A0CF222C72E5900E21B52 /* PBXContainerItemProxy */;
+		};
+		B81A0CFE22C72E5900E21B52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B81A0CD922C72E5700E21B52 /* FlightApp */;
+			targetProxy = B81A0CFD22C72E5900E21B52 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B81A0CE122C72E5700E21B52 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B81A0CE222C72E5700E21B52 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B81A0CE922C72E5900E21B52 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B81A0CEA22C72E5900E21B52 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B81A0D0322C72E5900E21B52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B81A0D0422C72E5900E21B52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B81A0D0622C72E5900E21B52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67LA5PS2LU;
+				INFOPLIST_FILE = FlightApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Reliance-Jio-Infocomm.FlightApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B81A0D0722C72E5900E21B52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67LA5PS2LU;
+				INFOPLIST_FILE = FlightApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Reliance-Jio-Infocomm.FlightApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B81A0D0922C72E5900E21B52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67LA5PS2LU;
+				INFOPLIST_FILE = FlightAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Reliance-Jio-Infocomm.FlightAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlightApp.app/FlightApp";
+			};
+			name = Debug;
+		};
+		B81A0D0A22C72E5900E21B52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67LA5PS2LU;
+				INFOPLIST_FILE = FlightAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Reliance-Jio-Infocomm.FlightAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlightApp.app/FlightApp";
+			};
+			name = Release;
+		};
+		B81A0D0C22C72E5900E21B52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67LA5PS2LU;
+				INFOPLIST_FILE = FlightAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Reliance-Jio-Infocomm.FlightAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FlightApp;
+			};
+			name = Debug;
+		};
+		B81A0D0D22C72E5900E21B52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67LA5PS2LU;
+				INFOPLIST_FILE = FlightAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Reliance-Jio-Infocomm.FlightAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FlightApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B81A0CD522C72E5700E21B52 /* Build configuration list for PBXProject "FlightApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B81A0D0322C72E5900E21B52 /* Debug */,
+				B81A0D0422C72E5900E21B52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B81A0D0522C72E5900E21B52 /* Build configuration list for PBXNativeTarget "FlightApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B81A0D0622C72E5900E21B52 /* Debug */,
+				B81A0D0722C72E5900E21B52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B81A0D0822C72E5900E21B52 /* Build configuration list for PBXNativeTarget "FlightAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B81A0D0922C72E5900E21B52 /* Debug */,
+				B81A0D0A22C72E5900E21B52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B81A0D0B22C72E5900E21B52 /* Build configuration list for PBXNativeTarget "FlightAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B81A0D0C22C72E5900E21B52 /* Debug */,
+				B81A0D0D22C72E5900E21B52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B81A0CE422C72E5700E21B52 /* FlightApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B81A0CE522C72E5700E21B52 /* FlightApp.xcdatamodel */,
+			);
+			currentVersion = B81A0CE522C72E5700E21B52 /* FlightApp.xcdatamodel */;
+			path = FlightApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B81A0CD222C72E5700E21B52 /* Project object */;
+}
