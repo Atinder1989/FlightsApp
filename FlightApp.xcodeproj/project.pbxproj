@@ -24,6 +24,7 @@
 		B81A0D6122C74A9800E21B52 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81A0D5B22C74A9800E21B52 /* ServiceManager.swift */; };
 		B81A0D6222C74A9800E21B52 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81A0D5C22C74A9800E21B52 /* SessionManager.swift */; };
 		B81A0D6322C74A9800E21B52 /* ServiceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81A0D5D22C74A9800E21B52 /* ServiceHelper.swift */; };
+		B81A0D6622C750FF00E21B52 /* FlightDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81A0D6522C750FF00E21B52 /* FlightDetailResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		B81A0D5B22C74A9800E21B52 /* ServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		B81A0D5C22C74A9800E21B52 /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		B81A0D5D22C74A9800E21B52 /* ServiceHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceHelper.swift; sourceTree = "<group>"; };
+		B81A0D6522C750FF00E21B52 /* FlightDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 		B81A0CDC22C72E5700E21B52 /* FlightApp */ = {
 			isa = PBXGroup;
 			children = (
+				B81A0D6422C750CA00E21B52 /* Model */,
 				B81A0D5622C74A6B00E21B52 /* Helper Classes */,
 				B81A0D5322C735C000E21B52 /* Extension */,
 				B81A0D5022C7340C00E21B52 /* AppDelegate */,
@@ -209,6 +212,14 @@
 				B81A0D5D22C74A9800E21B52 /* ServiceHelper.swift */,
 			);
 			path = Webservice;
+			sourceTree = "<group>";
+		};
+		B81A0D6422C750CA00E21B52 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B81A0D6522C750FF00E21B52 /* FlightDetailResponse.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,6 +365,7 @@
 				B81A0D6122C74A9800E21B52 /* ServiceManager.swift in Sources */,
 				B81A0D6222C74A9800E21B52 /* SessionManager.swift in Sources */,
 				B81A0D6322C74A9800E21B52 /* ServiceHelper.swift in Sources */,
+				B81A0D6622C750FF00E21B52 /* FlightDetailResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

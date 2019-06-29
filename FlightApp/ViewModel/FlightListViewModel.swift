@@ -10,7 +10,33 @@ import Foundation
 import UIKit
 
 class FlightListViewModel: NSObject {
-    
+    var reloadDataClosure: (() -> Void)? = nil
+   
+}
+
+// MARK:- Public Methods
+extension FlightListViewModel{
+    // MARK: Get Mobile Data Usage Information
+    func getFlightDetailsList() {
+        var service = Service.init(httpMethod: WebserviceHTTPMethod.get)
+        service.url = ServiceHelper.getSampleFlightDataUrl()
+        
+        ServiceManager.processDataFromServer(service: service, model: FlightDetailResponse.self) { (responseVo, error) in
+            
+            if error != nil {
+                //self.mobileDataInfo = []
+                return
+            }
+            
+            if let response = responseVo {
+                print(response.airlinemap?.sj)
+               // self.getVolumeDataInfoList(responseVo: response)
+            } else {
+               // self.mobileDataInfo = []
+            }
+            
+        }
+    }
 }
 
 extension FlightListViewModel: UITableViewDataSource {
@@ -34,5 +60,7 @@ extension FlightListViewModel: UITableViewDataSource {
 
 
 extension FlightListViewModel: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
 }

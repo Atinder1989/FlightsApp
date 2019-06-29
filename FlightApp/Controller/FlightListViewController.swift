@@ -19,6 +19,10 @@ class FlightListViewController: UIViewController {
         
         // Add Listener From ViewModel
         self.addListenerFromViewModel()
+        
+        // Get FlightList From Server
+        flighViewModel.getFlightDetailsList()
+
     }
 
 }
@@ -31,7 +35,13 @@ extension FlightListViewController {
     }
     
     private func addListenerFromViewModel() {
-       
+        flighViewModel.reloadDataClosure = { [weak self] in
+            DispatchQueue.main.async {
+                if let this = self {
+                    this.flightListTableView.reloadData()
+                }
+            }
+        }
     }
     
 }
