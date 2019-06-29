@@ -21,12 +21,11 @@ enum ServiceParsingKeys : String, CodingKey {
     case mum                 =   "MUM"
     
     case flightsData         =   "flightsData"
-    case originCode                  =   "originCode"
-    case destinationCode                  =   "destinationCode"
-    case takeoffTime                  =   "takeoffTime"
-    case landingTime                  =   "landingTime"
-    case price                 =   "price"
-    
-    case airlineCode                 =   "airlineCode"
-    case airLineClass                 =   "class"
+    case originCode          =   "originCode"
+    case destinationCode     =   "destinationCode"
+    case takeoffTime         =   "takeoffTime"
+    case landingTime         =   "landingTime"
+    case price               =   "price"
+    case airlineCode         =   "airlineCode"
+    case airLineClass        =   "class"
 }

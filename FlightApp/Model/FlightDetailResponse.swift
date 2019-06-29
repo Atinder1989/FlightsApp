@@ -12,13 +12,14 @@ struct FlightDetailResponse: Codable {
    
     var airlinemap: Airlinemap?
     var airportmap: Airportmap?
+    var flightData: [FlightData]
 
 
     init(from decoder:Decoder) throws {
     let container = try decoder.container(keyedBy: ServiceParsingKeys.self)
     self.airlinemap    = try container.decodeIfPresent(Airlinemap.self, forKey: .airlineMap) ?? nil
     self.airportmap    = try container.decodeIfPresent(Airportmap.self, forKey: .airportMap) ?? nil
-
+    self.flightData    = try container.decodeIfPresent([FlightData].self, forKey: .flightsData) ?? []
     }
     
     func encode(to encoder: Encoder) throws {
@@ -68,15 +69,6 @@ struct FlightData: Codable {
     var price: String
     var airlineCode: String
     var airLineClass: String
-
-    
-//    "originCode": "DEL",
-//    "destinationCode": "MUM",
-//    "takeoffTime": "1396614600000",
-//    "landingTime": "1396625400000",
-//    "price": "11500",
-//    "airlineCode": "G8",
-//    "class": "Business"
     
     init(from decoder:Decoder) throws {
         let container = try decoder.container(keyedBy: ServiceParsingKeys.self)

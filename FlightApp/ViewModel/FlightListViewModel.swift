@@ -29,7 +29,6 @@ extension FlightListViewModel{
             }
             
             if let response = responseVo {
-                print(response.airlinemap?.sj)
                // self.getVolumeDataInfoList(responseVo: response)
             } else {
                // self.mobileDataInfo = []
