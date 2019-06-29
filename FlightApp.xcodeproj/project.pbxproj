@@ -27,6 +27,7 @@
 		B81A0D6622C750FF00E21B52 /* FlightDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81A0D6522C750FF00E21B52 /* FlightDetailResponse.swift */; };
 		B81A0D6922C7587400E21B52 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81A0D6822C7587400E21B52 /* Enum.swift */; };
 		B81A0D6B22C7770E00E21B52 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81A0D6A22C7770E00E21B52 /* Date+Extension.swift */; };
+		B81A0D6D22C783E800E21B52 /* SortViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81A0D6C22C783E800E21B52 /* SortViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		B81A0D6522C750FF00E21B52 /* FlightDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailResponse.swift; sourceTree = "<group>"; };
 		B81A0D6822C7587400E21B52 /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
 		B81A0D6A22C7770E00E21B52 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		B81A0D6C22C783E800E21B52 /* SortViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				B81A0CDF22C72E5700E21B52 /* FlightListViewController.swift */,
+				B81A0D6C22C783E800E21B52 /* SortViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -377,6 +380,7 @@
 				B81A0D6022C74A9800E21B52 /* ServiceParsingKeys.swift in Sources */,
 				B81A0D5E22C74A9800E21B52 /* RequestManager.swift in Sources */,
 				B81A0CE022C72E5700E21B52 /* FlightListViewController.swift in Sources */,
+				B81A0D6D22C783E800E21B52 /* SortViewController.swift in Sources */,
 				B81A0CDE22C72E5700E21B52 /* AppDelegate.swift in Sources */,
 				B81A0D6122C74A9800E21B52 /* ServiceManager.swift in Sources */,
 				B81A0D6222C74A9800E21B52 /* SessionManager.swift in Sources */,
