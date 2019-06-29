@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 enum Airlinemap: String {
     case SJ                = "Spicejet"
@@ -26,4 +27,24 @@ enum Airlinemap: String {
         default: self = .None
         }
     }
+    
+    func getFlightImage() -> UIImage {
+        return (UIImage.init(named:self.rawValue) ??  UIImage.init(named: "placeHolder")!)
+    }
 }
+
+
+enum Airportmap: String {
+    case DEL                = "New Delhi"
+    case MUM                = "Mumbai"
+    case None              = "none"
+
+    init(_ value: String) {
+        switch value {
+        case "DEL": self = .DEL
+        case "MUM": self = .MUM
+        default: self = .None
+        }
+    }
+}
+

@@ -26,6 +26,7 @@
 		B81A0D6322C74A9800E21B52 /* ServiceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81A0D5D22C74A9800E21B52 /* ServiceHelper.swift */; };
 		B81A0D6622C750FF00E21B52 /* FlightDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81A0D6522C750FF00E21B52 /* FlightDetailResponse.swift */; };
 		B81A0D6922C7587400E21B52 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81A0D6822C7587400E21B52 /* Enum.swift */; };
+		B81A0D6B22C7770E00E21B52 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81A0D6A22C7770E00E21B52 /* Date+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		B81A0D5D22C74A9800E21B52 /* ServiceHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceHelper.swift; sourceTree = "<group>"; };
 		B81A0D6522C750FF00E21B52 /* FlightDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailResponse.swift; sourceTree = "<group>"; };
 		B81A0D6822C7587400E21B52 /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
+		B81A0D6A22C7770E00E21B52 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				B81A0D5422C735D600E21B52 /* UIView+Extension.swift */,
+				B81A0D6A22C7770E00E21B52 /* Date+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -369,6 +372,7 @@
 				B81A0CE622C72E5700E21B52 /* FlightApp.xcdatamodeld in Sources */,
 				B81A0D5222C734CA00E21B52 /* FlightListViewModel.swift in Sources */,
 				B81A0D6922C7587400E21B52 /* Enum.swift in Sources */,
+				B81A0D6B22C7770E00E21B52 /* Date+Extension.swift in Sources */,
 				B81A0D4F22C733C200E21B52 /* FlightCell.swift in Sources */,
 				B81A0D6022C74A9800E21B52 /* ServiceParsingKeys.swift in Sources */,
 				B81A0D5E22C74A9800E21B52 /* RequestManager.swift in Sources */,
