@@ -11,7 +11,13 @@ import UIKit
 
 class FlightListViewModel: NSObject {
     var reloadDataClosure: (() -> Void)? = nil
-   
+    private var flightDataList: [FlightData] = [] {
+        didSet {
+            if let reload = reloadDataClosure {
+                reload()
+            }
+        }
+    }
 }
 
 // MARK:- Public Methods
@@ -24,14 +30,14 @@ extension FlightListViewModel{
         ServiceManager.processDataFromServer(service: service, model: FlightDetailResponse.self) { (responseVo, error) in
             
             if error != nil {
-                //self.mobileDataInfo = []
+                self.flightDataList = []
                 return
             }
             
             if let response = responseVo {
-               // self.getVolumeDataInfoList(responseVo: response)
+                self.flightDataList = response.flightData
             } else {
-               // self.mobileDataInfo = []
+                self.flightDataList = []
             }
             
         }
@@ -40,7 +46,7 @@ extension FlightListViewModel{
 
 extension FlightListViewModel: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return self.flightDataList.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -50,7 +56,8 @@ extension FlightListViewModel: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: FlightCell.identifier,
                                                     for: indexPath) as? FlightCell {
-            return cell
+        cell.configureCell(model: self.flightDataList[indexPath.row])
+        return cell
         }
         return UITableViewCell()
 

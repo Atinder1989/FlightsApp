@@ -29,5 +29,11 @@ class FlightCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    // MARK: Configure Cell
+    func configureCell(model:FlightData) {
+       self.flightName.text = model.airLineMapName.rawValue
+        
+    }
 
 }
