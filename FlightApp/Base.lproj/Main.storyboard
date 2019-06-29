@@ -174,6 +174,17 @@
                                                 <constraint firstItem="Pg0-c8-X2B" firstAttribute="top" secondItem="uiz-Ah-oPZ" secondAttribute="top" constant="63" id="yGr-bQ-JZm"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="flightClass" destination="XkD-ku-yMF" id="mBK-0M-UgO"/>
+                                            <outlet property="flightFrom" destination="Gpk-YK-OeJ" id="zSF-0Z-2rq"/>
+                                            <outlet property="flightFromTime" destination="FRM-Gn-4dc" id="HGf-tl-Cge"/>
+                                            <outlet property="flightImageView" destination="bP5-UO-s2C" id="4px-zs-MID"/>
+                                            <outlet property="flightName" destination="EIT-wm-gS2" id="Ti3-pX-QI9"/>
+                                            <outlet property="flightPrice" destination="Pg0-c8-X2B" id="kwl-dE-lo5"/>
+                                            <outlet property="flightTo" destination="iPf-NE-IDe" id="KcV-mQ-4H7"/>
+                                            <outlet property="flightToTime" destination="0fh-FA-n8l" id="GUd-Kp-RNQ"/>
+                                            <outlet property="flightTotalTimeDuration" destination="hOu-ll-4qF" id="R54-0e-QOC"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>

@@ -9,6 +9,15 @@
 import UIKit
 
 class FlightCell: UITableViewCell {
+    @IBOutlet weak var flightImageView: UIImageView!
+    @IBOutlet weak var flightName: UILabel!
+    @IBOutlet weak var flightFrom: UILabel!
+    @IBOutlet weak var flightTo: UILabel!
+    @IBOutlet weak var flightFromTime: UILabel!
+    @IBOutlet weak var flightToTime: UILabel!
+    @IBOutlet weak var flightTotalTimeDuration: UILabel!
+    @IBOutlet weak var flightClass: UILabel!
+    @IBOutlet weak var flightPrice: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
