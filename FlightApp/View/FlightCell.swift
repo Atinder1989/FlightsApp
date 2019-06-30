@@ -40,7 +40,7 @@ class FlightCell: UITableViewCell {
        self.flightTo.text = model.flightToName
        self.flightFromTime.text = model.flightFromTime
        self.flightToTime.text = model.flightToTime
-       self.flightDuration.text = model.flightDuration
+        self.flightDuration.text = "Duration: " + model.flightDuration
        self.flightDate.text = model.flightDate
     }
 
