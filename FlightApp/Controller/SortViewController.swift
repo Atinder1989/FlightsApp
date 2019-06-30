@@ -55,6 +55,7 @@ class SortViewController: UIViewController {
     
 }
 
+// MARK:- UITableViewDataSource Methods
 extension SortViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.sortingList.count
@@ -67,7 +68,7 @@ extension SortViewController: UITableViewDataSource {
         return cell
     }
 }
-
+// MARK:- UITableViewDelegate Methods
 extension SortViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.selectedIndex = indexPath.row

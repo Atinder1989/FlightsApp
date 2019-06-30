@@ -58,7 +58,7 @@ extension FlightListViewController {
     }
 }
 
-
+// MARK:- SortViewControllerDelegate Methods
 extension FlightListViewController: SortViewControllerDelegate {
     func didClickOncancel() {
         removeSortView()

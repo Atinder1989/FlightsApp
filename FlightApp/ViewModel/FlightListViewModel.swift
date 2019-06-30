@@ -27,15 +27,15 @@ extension FlightListViewModel{
         var service = Service.init(httpMethod: WebserviceHTTPMethod.get)
         service.url = ServiceHelper.getSampleFlightDataUrl()
         
-        ServiceManager.processDataFromServer(service: service, model: FlightDetailResponse.self) { (responseVo, error) in
+        ServiceManager.processDataFromServer(service: service, model: FlightDetailResponse.self) { (response, error) in
             
             if error != nil {
                 self.flightDataList = []
                 return
             }
             
-            if let response = responseVo {
-                self.flightDataList = response.flightData
+            if let res = response {
+                self.flightDataList = res.flightData
             } else {
                 self.flightDataList = []
             }
@@ -71,7 +71,7 @@ extension FlightListViewModel{
     }
 }
 
-
+// MARK:- UITableViewDataSource Methods
 extension FlightListViewModel: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.flightDataList.count
@@ -92,7 +92,7 @@ extension FlightListViewModel: UITableViewDataSource {
     }
 }
 
-
+// MARK:- UITableViewDelegate Methods
 extension FlightListViewModel: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         

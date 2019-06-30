@@ -30,7 +30,6 @@ class FlightCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    // MARK: Configure Cell
     func configureCell(model:FlightData) {
        self.flightName.text  = model.flightName
        self.flightLogo.image = model.flightLogo
@@ -40,7 +39,7 @@ class FlightCell: UITableViewCell {
        self.flightTo.text = model.flightToName
        self.flightFromTime.text = model.flightFromTime
        self.flightToTime.text = model.flightToTime
-        self.flightDuration.text = model.flightDuration
+       self.flightDuration.text = model.flightDuration
        self.flightDate.text = model.flightDate
     }
 
