@@ -56,6 +56,8 @@ extension FlightListViewModel{
             break
         }
     }
+    
+  
 }
 
 // MARK:- Private Methods

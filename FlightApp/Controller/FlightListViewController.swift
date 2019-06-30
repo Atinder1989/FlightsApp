@@ -11,11 +11,14 @@ import UIKit
 class FlightListViewController: UIViewController {
     @IBOutlet weak var flightListTableView: UITableView!
     private let flighViewModel = FlightListViewModel()
+    
     var sortVC = SortViewController()
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        sortVC = self.storyboard?.instantiateViewController(withIdentifier: "SortViewController") as! SortViewController
         // Do any additional setup after loading the view.
         self.setTableViewCustomSetting()
         
@@ -28,7 +31,6 @@ class FlightListViewController: UIViewController {
     }
 
     @IBAction func sortClicked(_ sender: Any) {
-        sortVC = self.storyboard?.instantiateViewController(withIdentifier: "SortViewController") as! SortViewController
         sortVC.delegate = self
         self.addChild(sortVC)
         self.view.addSubview(sortVC.view)
