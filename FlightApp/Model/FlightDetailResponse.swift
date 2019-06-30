@@ -87,7 +87,7 @@ struct FlightData: Codable {
                 duration = duration + " \(minute)m"
             }
         }
-        self.flightDuration = duration
+        self.flightDuration = "Duration: "+duration
         
     }
     func encode(to encoder: Encoder) throws {
